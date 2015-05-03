@@ -1,5 +1,4 @@
 body{
-	padding-top: 20px;
   padding-bottom: 20px;
 }
 .photo-showcase{
@@ -7,7 +6,8 @@ body{
 }
 
 .carousel-front{
-	height:600px;
+	margin: auto;
+	max-width: 1200px;
 	overflow: hidden;
 }
 .carousel-front .item img{
@@ -25,5 +25,47 @@ body{
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+}
+
+.carousel-control{
+	background-image: none !important;
+}
+
+.carousel-control .glyphicon{
+
+
+	top:50px;
+}
+footer{
+	text-align: center;
+	padding-top: 19px;
+  	color: #777;
+  	margin-top: 40px;
+}
+
+a.title{
+	text-decoration: none;
+}
+
+.title img{
+	margin-top: -3px;
+	width: 55px;
+}
+.main-nav{
+	background-color: #fff;
+	border: none;
+}
+.main-nav .navbar-toggle{
+	margin-top: 16px;
+}
+.main-nav .active a{
+	background-color: rgba(51, 122, 183, 0) !important;
+	color: #337ab7 !important;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-top: 0px; 
+}
+.navbar-right{
+	margin-top: 5px;
 }
 
