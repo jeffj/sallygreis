@@ -1,0 +1,29 @@
+body{
+	padding-top: 20px;
+  padding-bottom: 20px;
+}
+.photo-showcase{
+	margin-top:20px;
+}
+
+.carousel-front{
+	height:600px;
+	overflow: hidden;
+}
+.carousel-front .item img{
+	width:100%;
+}
+
+.carousel-front .carousel-control{
+	opacity: 0;
+}
+.carousel-front .carousel-control:hover {
+    opacity: 1;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
