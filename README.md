@@ -1,1 +1,1 @@
-# [Ghost](https://sallygreis.com/) The Site
+# [Site](https://sallygreis.com/) The Site
