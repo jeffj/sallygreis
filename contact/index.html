@@ -17,6 +17,8 @@
     <link href="../css/style.css" rel="stylesheet">
 
 
+
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -126,7 +128,7 @@
             <input type="text" name="fullname" class="form-control" placeholder="Full Name">
         </div>
         <div class="form-group">
-            <input type="text" name="telephone" class="form-control" placeholder="Telephone Number">
+            <input placeholder="Telephone Number" type="text" class="form-control" id="phone-input"  name="telephone" >
         </div>
         <div class="form-group">
             <textarea class="form-control" name="comments" rows="3" placeholder="Additional Comments"></textarea>
@@ -154,6 +156,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/formatter.js"></script>
+
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   
       <script type="application/javascript" src="http://src.fireform.org/fireform.min.js"></script>
@@ -168,6 +173,11 @@
             emailConfirmationBodyText:"We will reach out to you shortly."
           }
           new Fireform('#main-contact', 'http://fireform.org/list/260/sallygreis', options)
+      
+          new Formatter(document.getElementById('phone-input'), {
+              'pattern': '({{999}}) {{999}}-{{9999}}',
+              'persistent': false
+          });
       </script>
 
 
