@@ -19,7 +19,9 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -74,10 +76,10 @@
           <div class="col-md-6">
              <div class="page-header">
               <h1>Contact Info</h1>
+              <p class="text-muted"> Fill Out the following to contact us:</p>
             </div>
-          <p> Fill Out the following to contact us:</p>
 
-            <form>
+<!--             <form>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
           </div>
@@ -92,7 +94,55 @@
           </div>
 
           <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+        </form> -->
+
+      <style>
+      .submit-success .form-group,.submit-failed .form-group{
+        display: none;
+      }
+      .submit-success .btn,.submit-failed .btn{
+        display: none;
+      }
+       
+      .submit-success-message, .submit-failed-message{
+        display: none;
+      }
+      .submit-success >.submit-success-message{
+        display: block;
+      }
+      .submit-failed >.submit-failed-message{
+        display: block;
+      }
+
+
+
+
+      </style>
+      <form id="main-contact" class="form-group">
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <input type="text" name="fullname" class="form-control" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="telephone" class="form-control" placeholder="Telephone Number">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="comments" rows="3" placeholder="Additional Comments"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        <h5 class="submit-success-message">
+          Great! We will contact you shortly.
+        </h5>
+        <h5 class="submit-failed-message">
+          Opps :-/ Slight problem. Please contact us at <a href="mailto:sgphoto@sallygreis.com">contact@sallygreise.com</a>
+        </h5>
+
+        
+
+      </form>
+
         </div>
       </div>
 
@@ -105,10 +155,34 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   
+      <script type="application/javascript" src="http://src.fireform.org/fireform.min.js"></script>
+        <script type="application/javascript">
+          /* See more options at http://fireform.org/docs */
+          options={
+            emailNotification:"sgphoto@sallygreis.com",
+            emailConfirmationName:"email",  //The email input we will send a confirmation to 
+            emailConfirmationFrom:"sgphoto@sallygreis.com",  //Email appears as sent by this address.
+            emailConfirmationSubject:"Thanks for contacting SG Photgraphy!",
+            emailConfirmationBodyHTML:"<p>We will reach out to you shortly.</p>",
+            emailConfirmationBodyText:"We will reach out to you shortly."
+          }
+          new Fireform('#main-contact', 'http://fireform.org/list/260/sallygreis', options)
+      </script>
 
 
 
 </body>
 </html>
+
+<!--  <!doctype html>
+    <body>
+      <form id="MySelector">
+        <input type="text" name="givenname" placeholder="Name">
+        <input type="email" name="inputexample" placeholder="Email">
+        <input type="submit">
+      </form>
+
+      <script type="application/javascript" src="http://src.fireform.org/fireform.min.js"></script>
+
+  </body> -->

@@ -50,6 +50,7 @@ a.title{
 .title img{
 	margin-top: -3px;
 	width: 55px;
+	margin-left: 7px;
 }
 .main-nav{
 	background-color: #fff;
@@ -67,5 +68,9 @@ a.title{
 }
 .navbar-right{
 	margin-top: 5px;
+}
+
+.prep-list li{
+	margin-bottom: 7px;
 }
 

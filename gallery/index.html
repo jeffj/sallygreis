@@ -16,10 +16,9 @@
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
 
+    <link href="../css/lightbox.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,24 +66,27 @@
     <div class="container ">
       <div class="row">
           
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
+<!--         <div class="col-xs-6 col-md-3">
+          <a  class="thumbnail" data-toggle="lightbox" href="#Lightbox1" >
             <img src="../img/gallery/gallery-1.jpg" alt="...">
+          </a>
+        </div> -->
+
+
+
+        <div class="col-xs-6 col-md-3">
+          <a href="../img/gallery/gallery-1.jpg" data-lightbox="gallery" data-title="" class="thumbnail">
+            <img src="../img/gallery/gallery-1-sm.jpg" alt="...">
           </a>
         </div>
         <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img src="../img/gallery/gallery-1.jpg" alt="...">
+          <a href="../img/gallery/gallery-1.jpg" data-lightbox="gallery" data-title="" href="#" class="thumbnail">
+            <img src="../img/gallery/gallery-1-sm.jpg" alt="...">
           </a>
         </div>
         <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img src="../img/gallery/gallery-1.jpg" alt="...">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img src="../img/gallery/gallery-1.jpg" alt="...">
+          <a href="../img/gallery/gallery-1.jpg" data-lightbox="gallery" data-title="" href="#" class="thumbnail">
+            <img src="../img/gallery/gallery-1-sm.jpg" alt="...">
           </a>
         </div>
 
@@ -99,7 +101,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/lightbox.js"></script>
   
 
 
