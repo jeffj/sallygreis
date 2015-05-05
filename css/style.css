@@ -2,7 +2,7 @@ body{
   padding-bottom: 20px;
 }
 .photo-showcase{
-	margin-top:20px;
+	margin: 15px;
 }
 
 .carousel-front{
@@ -81,3 +81,23 @@ a.title{
   margin-bottom: 30px;
 }
 
+@media (max-width: 992px){
+.gallery >div {
+  height: 176px;
+  margin-bottom: 90px;
+}
+}
+
+@media (max-width: 768px){
+.gallery >div {
+  height: 126px;
+  margin-bottom: 70px;
+}
+}
+
+@media (max-width: 568px){
+.gallery >div {
+  height: 126px;
+  margin-bottom: 10px;
+}
+}
