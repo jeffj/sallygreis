@@ -48,9 +48,9 @@ a.title{
 }
 
 .title img{
-	margin-top: 9px;
-	height: 50px;
-	margin-left: -5px;
+	margin-top: 12px;
+	width: 240px;
+	margin-left: 0px;
 }
 .title h3{
 	display: none;
