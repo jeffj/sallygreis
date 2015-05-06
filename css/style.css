@@ -1,13 +1,10 @@
 body{
   padding-bottom: 20px;
 }
-.photo-showcase{
-	margin: 15px;
-}
+
 
 .carousel-front{
 	margin: auto;
-	max-width: 1200px;
 	overflow: hidden;
 }
 .carousel-front .item img{
@@ -19,6 +16,9 @@ body{
 }
 .carousel-front .carousel-control:hover {
     opacity: 1;
+}
+.navbar-header{
+  margin-left: 0px !important;
 }
 
 .header h3 {
@@ -50,7 +50,7 @@ a.title{
 .title img{
 	margin-top: 9px;
 	height: 50px;
-	margin-left: 7px;
+	margin-left: -5px;
 }
 .title h3{
 	display: none;
